@@ -9,7 +9,6 @@ import random
 from dishes import dishes
 
 max_guesses = 10
-guesses = 0
 
 def main():
     play = explain_rules()
@@ -22,13 +21,14 @@ def play_game(play):
         guess_mystery_dish(mystery_dish)
         play = guess_mystery_dish(mystery_dish) 
 
-def explain_rules(mystery_dish):
-    print(f"To win this game, you must determine the mystery dish by making guesses about its properties. After {max_guesses} guesses, you must guess the mystery dish in one try. ")
+def explain_rules():
+    print(f"To win this game, you must determine the mystery dish by making guesses about its properties.\nAfter {max_guesses} opportunities to gather information, you must guess the mystery dish in one try. ")
     
     #return if user wants to play
     return True if input("Are you up for the challenge?(yes/no) \n>").lower() == "yes" else False
 
 def guess_properties(mystery_dish): 
+    guesses = 0
     while guesses < max_guesses:
         guesses += 1
         print(f"Current guess: {guesses}")
@@ -38,7 +38,7 @@ def guess_properties(mystery_dish):
             #update this to have properties and their quantity come from a list
             property = input(f"What propery of the dish would you like to guess? \
                 \nOptions: \
-                \nType (2), main ingredients (4), colors (2), temperature when served (1), country of origin (1) \n> ")
+                \nType, ingredients, colors, temperature when served, country of origin \n> ")
     
             #validate the user's input is from the list, otherwise tell them it's invalid and make them choose again
                 #if property in list of properties, break 
@@ -63,3 +63,6 @@ def guess_mystery_dish(mystery_dish):
     
     #return if user wants to play again
     return True if input("Do you want to play again?(yes/no) \n>").lower() == "yes" else False   
+
+if __name__ == "__main__":
+    main()   
