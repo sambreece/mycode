@@ -18,7 +18,6 @@ def play_game(play):
     while play:
         mystery_dish = random.choice(dishes)
         guess_properties(mystery_dish)
-        guess_mystery_dish(mystery_dish)
         play = guess_mystery_dish(mystery_dish) 
 
 def explain_rules():
@@ -38,7 +37,8 @@ def guess_properties(mystery_dish):
             #update this to have properties and their quantity come from a list
             property = input(f"What propery of the dish would you like to guess? \
                 \nOptions: \
-                \nType, ingredients, colors, temperature when served, country of origin \n> ").lower()
+                \nType, ingredients, colors, temperature when served, country of origin \
+                \nIf you're ready to guess early, input 'guess'. \n> ").lower()
     
             #validate the user's input is from the list, otherwise tell them it's invalid and make them choose again
             #if property in list of properties, break 
@@ -49,6 +49,12 @@ def guess_properties(mystery_dish):
                     print("Correct!")
                 else:
                     print("Wrong!")
+                #print remaining number of guesses
+                print(f"Guesses remaining: {max_guesses - guesses}.")        
+                break
+            elif property == "guess":
+                print("Wow, looks like you're ready to guess early!")
+                guesses = max_guesses
                 break
             else: 
                 print("You can't guess about that property!")
@@ -56,8 +62,6 @@ def guess_properties(mystery_dish):
             #handle guessing property, decide how those output strings should look
             #should i let them duplicate guesses? decide this
         
-        #print remaining number of guesses
-        print(f"Guesses remaining: {max_guesses - guesses}.")
             
 
 def guess_mystery_dish(mystery_dish):
@@ -68,11 +72,11 @@ def guess_mystery_dish(mystery_dish):
     if final_guess == mystery_dish:
         print("Congratulations! You won!")
     else:
-        print(f"You lose, and the mystery dish dissappears into the ether, nameless. \n \
-        Days later, it comes to you in a dream. It was {mystery_dish['name']}.")
+        print(f"You lose, and the mystery dish dissappears into the ether, nameless.  \
+        \nDays later, it comes to you in a dream. It was {mystery_dish['name']}.")
     
     #return if user wants to play again
     return True if input("Do you want to play again?(yes/no) \n> ").lower() == "yes" else False   
 
 if __name__ == "__main__":
-    main()   
+    main()
