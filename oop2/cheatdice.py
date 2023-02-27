@@ -32,4 +32,13 @@ class Cheat_Loaded_Dice(Player): # inheritance of Player
             if self.dice[i] < 6:
                 self.dice[i] += 1
             i += 1
-
+# aloows user to increase if total sum less than 9
+class Cheat_Total_Score(Player):
+    def cheat(self):
+        while True: 
+            if sum(self.dice) <= 9:
+                self.dice = []
+                for i in range(3):
+                    self.dice.append(random.randint(1,6))
+            else:
+                break
