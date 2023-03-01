@@ -1,0 +1,319 @@
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 33
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 34
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 34
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 19
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 12
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 13
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 14
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 15
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 27
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 17
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 16
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 19
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 20
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 19
+DEBUG:(Thread-8 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 18
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 28
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 27
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 27
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:119 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:120          ████████╗            ████████╗    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:121          ╚══██╔══╝            ╚══██╔══╝    
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:122             ██║  ▄▄  ▄ ▄▄ ▄▄▖▄▖  ██║ █ ▗▖  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:123     ▞▀▚ ▖▗  ██║ █▄▄█ █▀▘  █ █ █  ██║ █▟▘   
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:124     ▙▄▞▐▄▟  ██║ ▀▄▄▖ █    █ ▝ █  ██║ █ ▀▄  
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:125     ▌    ▐  ╚═╝                  ╚═╝       
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:126       ▚▄▄▘                                 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:127 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:128   Version: 0.22.0-a4
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:129 
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:130 Starting Main Loop...
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:137 Signal Event Registered
+INFO:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:264 Resize: w:242, h:65
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 28
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 28
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 27
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 27
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 25
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 25
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 21
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 22
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 24
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 26
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 25
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 23
+DEBUG:(Thread-3 ) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:112 fps: 25
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/ttk.py:291 Captured SIGINT <CTRL-C>
+DEBUG:(MainThread) /home/student/.local/lib/python3.10/site-packages/TermTk/TTkCore/TTkTerm/input.py:78 Close TTkInput
