@@ -1,14 +1,14 @@
 #!usr/bin/env python3
 import TermTk as ttk
+    # Set the VBoxLayout as default in the terminal widget
+root = ttk.TTk(layout=ttk.TTkVBoxLayout())
 
-    # Create a root object (it is a widget that represent the terminal)
-root = ttk.TTk()
+    # Create main boxes:
+top_box = ttk.TTkWindow(parent=root, border=True)
+bottom_box = ttk.TTkWindow(parent=root, border=True)
 
-    # Create a window and attach it to the root (parent=root)
-helloWin = ttk.TTkWindow(parent=root,pos = (1,1), size=(30,10), title="Hello Window", border=True)
+    #Put buttons in bottom box
+ttk.TTkButton(parent=bottom_box, border=True, text="Button1")
+ttk.TTkButton(parent=bottom_box, border=True, text="Button2")
 
-    # Define the Label and attach it to the window (parent=helloWin)
-ttk.TTkLabel(parent=helloWin, pos=(5,5), text="Hello World")
-
-    # Start the Main loop
 root.mainloop()
