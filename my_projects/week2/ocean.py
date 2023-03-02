@@ -57,14 +57,30 @@ def main():
 
     ttk.TTkLog.use_default_file_logging()
 
+    #root = ttk.TTk()
+        # Set the GridBoxLayout as default in the terminal widget
     root = ttk.TTk()
-    if args.f:
-        rootGraph = root
-        root.setLayout(ttk.TTkGridLayout())
-    else:
-        rootGraph = ttk.TTkWindow(parent=root,pos=(1,1), size=(100,40), title="The Ocean", border=True, layout=ttk.TTkGridLayout())
-    demoGraph(rootGraph)
+    grid_layout = ttk.TTkGridLayout()
+    root.setLayout(grid_layout)
+
+    # Create main boxes:
+    top_box = ttk.TTkFrame(parent=root,pos=(1,1), size=(50,40), title="The Ocean", border=True, layout=ttk.TTkGridLayout())
+    grid_layout.addWidget(top_box,0,0,1,3)
+
+    #Make button box:
+    button_box = ttk.TTkVBoxLayout()
+    grid_layout.addItem(button_box, 1,0,1,3)
+
+    button_box.addWidget(ttk.TTkButton(border=True, text="Button1"))
+    button_box.addWidget(ttk.TTkButton(border=True, text="Button2"))
+    button_box.addWidget(ttk.TTkButton(border=True, text="Button3"))
+    button_box.addWidget(ttk.TTkButton(border=True, text="Button4"))
+#    if args.f:
+#        rootGraph = root
+#        root.setLayout(ttk.TTkGridLayout())
+    demoGraph(top_box)
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()
