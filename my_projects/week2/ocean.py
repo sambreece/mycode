@@ -56,14 +56,12 @@ def main():
     button_box = ttk.TTkVBoxLayout()
     grid_layout.addItem(button_box, 1,0,1,3)
 
-    button_box.addWidget(ttk.TTkButton(border=True, text="Button1"))
-    button_box.addWidget(ttk.TTkButton(border=True, text="Button2"))
-    button_box.addWidget(ttk.TTkButton(border=True, text="Button3"))
-    button_box.addWidget(ttk.TTkButton(border=True, text="Button4"))
+    button_box.addWidget(ttk.TTkButton(border=True,checkable=True, text="Button1"))
+    button_box.addWidget(ttk.TTkButton(border=True,checkable=True, text="Button2"))
+    button_box.addWidget(ttk.TTkButton(border=True,checkable=True,  text="Button3"))
+    button_box.addWidget(ttk.TTkButton(border=True,checkable=True, text="Button4"))
 
     demoGraph(top_box)
     root.mainloop()
-def show_question_with_image(image, choices):
-    
- __name__ == "__main__":
+if __name__ == "__main__":
     main()
