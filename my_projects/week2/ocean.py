@@ -19,27 +19,12 @@ class graphTimerEvent():
     @ttk.pyTTkSlot()
     def timerEvent(self):
         self.switch = not self.switch
-        if self.type == 1: # Triple sin
-            offset1 = 15
-            offset2 = 20
-            val = [ math.sin( self.val         *math.pi/40)*4*10 ,
-                    math.sin((self.val+offset1)*math.pi/40)*4*7,
-                    math.sin((self.val+offset2)*math.pi/30)*4*5,]
+
         if self.type == 2: # Double sin alternated
             offset = 15
             if self.switch: val = [math.sin( self.val        *math.pi/40)*4*10]
             else:           val = [math.sin((self.val+offset)*math.pi/40)*4*7 ]
-        if self.type == 3: # random + sin
-            val = [ random.uniform(15,+40),
-                    math.sin((self.val)*math.pi/30)*15+20,
-                    ]
-        if self.type == 5: # random
-            val = [random.uniform(-40,-10)]
-        if self.type == 6: # random
-            val = [random.uniform(-40,+40)]
-        if self.type == 4: # mix rand and sin
-            if self.switch: val = [math.sin(self.val*math.pi/40)*4*10]
-            else:           val = [random.uniform(-40,+40)]
+
         self.val+=1
         self.w.addValue(val)
         self.timer.start(self.delay)
@@ -75,12 +60,10 @@ def main():
     button_box.addWidget(ttk.TTkButton(border=True, text="Button2"))
     button_box.addWidget(ttk.TTkButton(border=True, text="Button3"))
     button_box.addWidget(ttk.TTkButton(border=True, text="Button4"))
-#    if args.f:
-#        rootGraph = root
-#        root.setLayout(ttk.TTkGridLayout())
+
     demoGraph(top_box)
     root.mainloop()
-
-
-if __name__ == "__main__":
+def show_question_with_image(image, choices):
+    
+ __name__ == "__main__":
     main()
