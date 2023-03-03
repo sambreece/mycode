@@ -20,52 +20,36 @@ class HowToFreeLobster(Screen):
         self.styles.background = "#4682B4"
         self.styles.text_align = "center"
         yield Grid(
+            Static(""),
             Static("What should you use to free the lobster?"),
             Static("A. Your hands "),
             Static("B. Your wired headphones"),
             Static("C. Grill tongs from a nearby display"),
             Static("D. A pen from your pocket"))
 
-class TheRealization(Screen):
+class TextPage(Screen):
+
+    def __init__(self, page_index: int) -> None:
+        super().__init__()
+        self.page_index = page_index
+
     def compose(self) -> ComposeResult:
-        realization  = "The sight stops you in your tracks. You realize you have no choice. You have to free the lobster."
+        text = ["After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store.", "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster.","🦞","The sight stops you in your tracks. You realize you have no choice. You have to free the lobster."]
+        self.styles.background = "#4682B4"
+        self.styles.align_vertical = "middle"
+        realization  = text[self.page_index]
         self.box = Static(realization)
-        self.box.styles.background = "#4682B4"
         self.box.styles.text_align = "center"
-        self.box.styles.padding = (10, 2)
         yield Footer()
         yield self.box
 
-class LobsterPhoto(Screen):
+class ErrorPage(Screen):
     def compose(self) -> ComposeResult:
-        self.box = Static("🦞")
-        self.box.styles.background = "#4682B4"
+        self.styles.background = "#black"
+        self.styles.align_vertical = "middle"
+        intro = "OOPS. There was an error. Please use 'q' to quit the program."
+        self.box =  Static(intro)
         self.box.styles.text_align = "center"
-        #self.box.styles.align_horizontal = "center"
-        self.box.styles.color = "red"
-        self.box.styles.padding = (10, 2)
-        yield Footer()
-        yield self.box
-
-
-class LobsterIntro(Screen):
-    def compose(self) -> ComposeResult:
-        tank = "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster."
-        self.box = Static(tank)
-        self.box.styles.background = "#4682B4"
-        self.box.styles.text_align = "center"
-        self.box.styles.padding = (10, 2)
-        yield Footer()
-        yield self.box
-
-class Backstory(Screen):
-    def compose(self) -> ComposeResult:
-        intro = "After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store. "
-        self.box = Static(intro)
-        self.box.styles.background = "#4682B4"
-        self.box.styles.text_align = "center"
-        self.box.styles.padding = (10, 2)
-        yield Footer()
         yield self.box
 
 class Title(Screen):
@@ -81,7 +65,6 @@ class Title(Screen):
         self.box.styles.padding = (10, 2)
         yield Footer()
         yield self.box
-
     def on_mount(self):
         self.box.styles.animate("opacity", value=0.0, duration=8.0)
         
@@ -101,12 +84,19 @@ class LobsterLiberatorApp(App):
         self.screen.styles.background = color
         
     async def on_key(self, event: events.Key) -> None:
-        screens = [Backstory(),LobsterIntro(), LobsterPhoto(), TheRealization(), HowToFreeLobster()]
+        screens = [TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), TextPage(self.counter)]
         if event.key == "enter":
             self.app.push_screen(screens[self.counter])
-        #if event.key == "q":
-        #    self.app.exit()
-        self.counter += 1
+            self.counter += 1
+        if event.key == "a":
+            response_a = [ErrorPage(), ErrorPage(),ErrorPage()]
+            self.app.exit()
+        if event.key == "b":
+            self.app.exit()
+        if event.key == "c":
+            self.app.exit()
+        if event.key == "d":
+            self.app.exit()
 if __name__ == "__main__":
     app = LobsterLiberatorApp()
     app.run()
