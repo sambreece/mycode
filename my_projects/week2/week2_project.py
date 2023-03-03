@@ -39,7 +39,7 @@ class TextPage(Screen):
         self.page_index = page_index
 
     def compose(self) -> ComposeResult:
-        text = ["After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store.", "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster.","🦞","The sight stops you in your tracks. You realize you have no choice. You have to free the lobster."]
+        text = ["After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store.", "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster.","🦞","The sight stops you in your tracks. You realize you have no choice. You have to free the lobster., The lobster hears the music playing through your headphones. It seems like it likes it. It climbs up your headphones and into your inventory."]
         self.styles.background = "#4682B4"
         self.styles.align_vertical = "middle"
         realization  = text[self.page_index]
@@ -71,7 +71,23 @@ class Title(Screen):
         yield self.box
     def on_mount(self):
         self.styles.animate("opacity", value=0.0, duration=8.0)
+class AnotherChancePage(Screen):
 
+    def __init__(self, message: str) -> None:
+        super().__init__()
+        self.message = message
+
+    def compose(self) -> ComposeResult:
+        self.styles.background = "#4682B4"
+        self.styles.align_vertical = "middle"
+        self.box = Static(self.message)
+        self.box.styles.text_align = "center"
+        yield Button("Click Here to Return", variant="primary", id="return")
+        yield Footer()
+        yield self.box
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "return":
+            self.app.pop_screen()
 class InventoryPage(Screen):
 
     def __init__(self, items: list) -> None:
@@ -83,7 +99,7 @@ class InventoryPage(Screen):
         self.styles.align_vertical = "middle"
         self.box = Static("Items:\n" + '\n'.join(self.items))
         self.box.styles.text_align = "center"
-        yield Button("Return to Game", variant = "primary", id="return")
+        yield Button("Click Here to Return", variant = "primary", id="return")
         yield Footer()
         yield self.box
     def on_button_pressed(self, event: Button.Pressed) -> None:
@@ -132,13 +148,15 @@ class LobsterLiberatorApp(App):
             if "a" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_a[self.counter])
                 counter+=1
+            elif self.counter-1 == 4:
+                self.app.push_screen(AnotherChancePage("The lobster tries to pinch your fingers."))
             else:
                 self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "b":
-            response_b = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            response_b = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),TextPage(self.counter),ErrorPage()]
             if "b" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_b[self.counter])
-                counter+=1
+                self.counter+=1
             else:
                 self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "c":
@@ -146,6 +164,8 @@ class LobsterLiberatorApp(App):
             if "c" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_c[self.counter])
                 counter+=1
+            elif self.counter-1 == 4:
+                self.app.push_screen(AnotherChancePage("The lobster easily avoids the tongs."))
             else:
                 self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "d":
@@ -153,10 +173,14 @@ class LobsterLiberatorApp(App):
             if "d" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_d[self.counter])
                 counter+=1
+            elif self.counter-1 == 4:
+                self.app.push_screen(AnotherChancePage("The lobster doesn't seem interested in the pen."))
             else:
                 self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "i":
             inventory = ["pen", "wired headphones"]
+            if self.counter > 4:
+                inventory.append("lobster")
             self.app.push_screen(InventoryPage(inventory))
 if __name__ == "__main__":
     app = LobsterLiberatorApp()
