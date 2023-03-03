@@ -1,6 +1,7 @@
 #textual 
 #pip install textual
 from textual.app import App, ComposeResult
+from textual.binding import Binding
 from textual.containers import Grid
 from textual.screen import Screen
 from textual.widgets import Static, Header, Footer, Button
@@ -12,16 +13,38 @@ from pyfiglet import Figlet
 #rich-pixels
 #pip install rich-pixels
 from rich_pixels import Pixels
+from rich.align import Align
 
-from lobster_side import lobster
+class HowToFreeLobster(Screen):
+    def compose(self) -> ComposeResult:
+        self.styles.background = "#4682B4"
+        self.styles.text_align = "center"
+        yield Grid(
+            Static("What should you use to free the lobster?"),
+            Static("A. Your hands "),
+            Static("B. Your wired headphones"),
+            Static("C. Grill tongs from a nearby display"),
+            Static("D. A pen from your pocket"))
+
+class TheRealization(Screen):
+    def compose(self) -> ComposeResult:
+        realization  = "The sight stops you in your tracks. You realize you have no choice. You have to free the lobster."
+        self.box = Static(realization)
+        self.box.styles.background = "#4682B4"
+        self.box.styles.text_align = "center"
+        self.box.styles.padding = (10, 2)
+        yield Footer()
+        yield self.box
 
 class LobsterPhoto(Screen):
     def compose(self) -> ComposeResult:
-        self.box = Static(lobster)
+        self.box = Static("🦞")
         self.box.styles.background = "#4682B4"
         self.box.styles.text_align = "center"
+        #self.box.styles.align_horizontal = "center"
         self.box.styles.color = "red"
         self.box.styles.padding = (10, 2)
+        yield Footer()
         yield self.box
 
 
@@ -31,8 +54,8 @@ class LobsterIntro(Screen):
         self.box = Static(tank)
         self.box.styles.background = "#4682B4"
         self.box.styles.text_align = "center"
-        #self.box.styles.color = "white"
         self.box.styles.padding = (10, 2)
+        yield Footer()
         yield self.box
 
 class Backstory(Screen):
@@ -41,8 +64,8 @@ class Backstory(Screen):
         self.box = Static(intro)
         self.box.styles.background = "#4682B4"
         self.box.styles.text_align = "center"
-        #self.box.styles.color = "white"
         self.box.styles.padding = (10, 2)
+        yield Footer()
         yield self.box
 
 class Title(Screen):
@@ -56,15 +79,19 @@ class Title(Screen):
         self.box.styles.text_align = "center"
         self.box.styles.color = "black"
         self.box.styles.padding = (10, 2)
+        yield Footer()
         yield self.box
 
     def on_mount(self):
         self.box.styles.animate("opacity", value=0.0, duration=8.0)
         
-        
 #Main application:
 class LobsterLiberatorApp(App):
-
+    BINDINGS = [
+        Binding(key="q", action="quit", description="Quit the app"),
+        Binding(key="enter", action="enter", description="Enter to continue")]
+    def compose(self) -> ComposeResult:
+        yield Footer()
     def on_mount(self) -> None:
         self.counter = 0
         self.app.push_screen(Title())
@@ -74,11 +101,11 @@ class LobsterLiberatorApp(App):
         self.screen.styles.background = color
         
     async def on_key(self, event: events.Key) -> None:
-        screens = [Backstory(),LobsterIntro(), LobsterPhoto()]
+        screens = [Backstory(),LobsterIntro(), LobsterPhoto(), TheRealization(), HowToFreeLobster()]
         if event.key == "enter":
             self.app.push_screen(screens[self.counter])
-        if event.key == "q":
-            self.app.exit()
+        #if event.key == "q":
+        #    self.app.exit()
         self.counter += 1
 if __name__ == "__main__":
     app = LobsterLiberatorApp()
