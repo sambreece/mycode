@@ -1,3 +1,6 @@
+from rich_pixels import Pixels
+
+lobster=Pixels.from_ascii("""\
                              ,.---._
                    ,,,,     /       `,
                     \\\\   /    '\_  ;
@@ -11,3 +14,4 @@
                     ////   \ `` _/ ;
                    ''''     \  `  .'
                              `---'
+""")
