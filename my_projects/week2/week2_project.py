@@ -15,17 +15,22 @@ from pyfiglet import Figlet
 from rich_pixels import Pixels
 from rich.align import Align
 
-class HowToFreeLobster(Screen):
+class QuestionPage(Screen):
+    def __init__(self, page_index: int) -> None:
+        super().__init__()
+        self.page_index = page_index
+
     def compose(self) -> ComposeResult:
+        options = [None, None, None, None, ["What should you use to free the lobster?", "A. Your hands ", "B. Your wired headphones", "C. Grill tongs from a nearby display", "D. A pen from your pocket"]]
         self.styles.background = "#4682B4"
         self.styles.text_align = "center"
         yield Grid(
             Static(""),
-            Static("What should you use to free the lobster?"),
-            Static("A. Your hands "),
-            Static("B. Your wired headphones"),
-            Static("C. Grill tongs from a nearby display"),
-            Static("D. A pen from your pocket"))
+            Static(options[self.page_index][0]),
+            Static(options[self.page_index][1]),
+            Static(options[self.page_index][2]),
+            Static(options[self.page_index][3]),
+            Static(options[self.page_index][4]))
 
 class TextPage(Screen):
 
@@ -45,7 +50,6 @@ class TextPage(Screen):
 
 class ErrorPage(Screen):
     def compose(self) -> ComposeResult:
-        self.styles.background = "#black"
         self.styles.align_vertical = "middle"
         intro = "OOPS. There was an error. Please use 'q' to quit the program."
         self.box =  Static(intro)
@@ -66,13 +70,47 @@ class Title(Screen):
         yield Footer()
         yield self.box
     def on_mount(self):
-        self.box.styles.animate("opacity", value=0.0, duration=8.0)
-        
+        self.styles.animate("opacity", value=0.0, duration=8.0)
+
+class InventoryPage(Screen):
+
+    def __init__(self, items: list) -> None:
+        super().__init__()
+        self.items = items
+
+    def compose(self) -> ComposeResult:        
+        self.styles.background = "#4682B4"
+        self.styles.align_vertical = "middle"
+        self.box = Static("Items:\n" + '\n'.join(self.items))
+        self.box.styles.text_align = "center"
+        yield Button("Return to Game", variant = "primary", id="return")
+        yield Footer()
+        yield self.box
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "return":
+            self.app.pop_screen()
+class GameOverPage(Screen):
+
+    def __init__(self, message: str) -> None:
+        super().__init__()
+        self.message = message
+
+    def compose(self) -> ComposeResult:
+        self.styles.align_vertical = "middle"
+        self.box = Static("GAME OVER!\n" + self.message)
+        self.box.styles.text_align = "center"
+        yield self.box
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "return":
+            self.app.pop_screen()
+
 #Main application:
 class LobsterLiberatorApp(App):
     BINDINGS = [
         Binding(key="q", action="quit", description="Quit the app"),
-        Binding(key="enter", action="enter", description="Enter to continue")]
+        Binding(key="enter", action="enter", description="Enter to continue"), 
+        Binding(key="i", action="i", description="View inventory")]
+    
     def compose(self) -> ComposeResult:
         yield Footer()
     def on_mount(self) -> None:
@@ -84,19 +122,42 @@ class LobsterLiberatorApp(App):
         self.screen.styles.background = color
         
     async def on_key(self, event: events.Key) -> None:
-        screens = [TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), TextPage(self.counter)]
+        screens = [TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), QuestionPage(self.counter)]
+        correct_answer = [None, None, None, None, "b"]
         if event.key == "enter":
             self.app.push_screen(screens[self.counter])
             self.counter += 1
         if event.key == "a":
-            response_a = [ErrorPage(), ErrorPage(),ErrorPage()]
-            self.app.exit()
+            response_a = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            if "a" == correct_answer[self.counter-1]:
+                self.app.push_screen(response_a[self.counter])
+                counter+=1
+            else:
+                self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "b":
-            self.app.exit()
+            response_b = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            if "b" == correct_answer[self.counter-1]:
+                self.app.push_screen(response_b[self.counter])
+                counter+=1
+            else:
+                self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "c":
-            self.app.exit()
+            response_c = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            if "c" == correct_answer[self.counter-1]:
+                self.app.push_screen(response_c[self.counter])
+                counter+=1
+            else:
+                self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "d":
-            self.app.exit()
+            response_d = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            if "d" == correct_answer[self.counter-1]:
+                self.app.push_screen(response_d[self.counter])
+                counter+=1
+            else:
+                self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
+        if event.key == "i":
+            inventory = ["pen", "wired headphones"]
+            self.app.push_screen(InventoryPage(inventory))
 if __name__ == "__main__":
     app = LobsterLiberatorApp()
     app.run()
