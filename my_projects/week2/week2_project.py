@@ -21,9 +21,17 @@ class QuestionPage(Screen):
         self.page_index = page_index
 
     def compose(self) -> ComposeResult:
-        options = [None, None, None, None, ["What should you use to free the lobster?", "A. Your hands ", "B. Your wired headphones", "C. Grill tongs from a nearby display", "D. A pen from your pocket"]]
+        options = [None, None, None, None, 
+                ["What should you use to free the lobster?", "A. Your hands ", "B. Your wired headphones", "C. Grill tongs from a nearby display", "D. A pen from your pocket"],
+                None,
+                ["Which aisle should you use to exit the grocery store?", "A. Frozen food aisle. It seems quiet.",
+                    "B. Vegetable aisle. There are only one or two shoppers, minding their own business.",
+                    "C. Snack aisle. It seems busy, but maybe that will cover your tracks.",
+                    "D. Beverage aisle. Do lobsers like soda?"]
+                ]
         self.styles.background = "#4682B4"
         self.styles.text_align = "center"
+        self.styles.align_horizontal = "center"
         yield Grid(
             Static(""),
             Static(options[self.page_index][0]),
@@ -39,7 +47,17 @@ class TextPage(Screen):
         self.page_index = page_index
 
     def compose(self) -> ComposeResult:
-        text = ["After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store.", "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster.","🦞","The sight stops you in your tracks. You realize you have no choice. You have to free the lobster., The lobster hears the music playing through your headphones. It seems like it likes it. It climbs up your headphones and into your inventory."]
+        text = ["After a long day in a cubicle, you find yourself browsing the aisles of your favorite nostalgic grocery store.", 
+                "As you pass the meat counter, you can't help but notice a dirty tank with a single occupant: one lonely lobster.",
+                "🦞",
+                "The sight stops you in your tracks. You realize you have no choice. You have to free the lobster.",
+                None,
+                "The lobster hears the music playing through your headphones. It seems like it likes this song. It climbs up your headphones and into your inventory.",
+                None,
+                "You made it out of the grocery store!  You hear a happy noise from inside your inventory.",
+                "You can see the glistening waves of the ocean in the distance.",
+                "🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊"
+                ]
         self.styles.background = "#4682B4"
         self.styles.align_vertical = "middle"
         realization  = text[self.page_index]
@@ -113,7 +131,7 @@ class GameOverPage(Screen):
 
     def compose(self) -> ComposeResult:
         self.styles.align_vertical = "middle"
-        self.box = Static("GAME OVER!\n" + self.message)
+        self.box = Static("GAME OVER!\n" + self.message + "\nPlease use 'q' to quit the program")
         self.box.styles.text_align = "center"
         yield self.box
     def on_button_pressed(self, event: Button.Pressed) -> None:
@@ -138,8 +156,9 @@ class LobsterLiberatorApp(App):
         self.screen.styles.background = color
         
     async def on_key(self, event: events.Key) -> None:
-        screens = [TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), QuestionPage(self.counter)]
-        correct_answer = [None, None, None, None, "b"]
+        screens = [TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), TextPage(self.counter), QuestionPage(self.counter),
+                None, QuestionPage(self.counter), TextPage(self.counter), TextPage(self.counter)]
+        correct_answer = [None, None, None, None, "b", None, "c"]
         if event.key == "enter":
             self.app.push_screen(screens[self.counter])
             self.counter += 1
@@ -147,7 +166,7 @@ class LobsterLiberatorApp(App):
             response_a = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
             if "a" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_a[self.counter])
-                counter+=1
+                self.counter+=1
             elif self.counter-1 == 4:
                 self.app.push_screen(AnotherChancePage("The lobster tries to pinch your fingers."))
             else:
@@ -160,10 +179,10 @@ class LobsterLiberatorApp(App):
             else:
                 self.app.push_screen(GameOverPage("Someone spotted a lobster claw hanging out of your bag."))
         if event.key == "c":
-            response_c = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
+            response_c = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(), TextPage(self.counter),ErrorPage()]
             if "c" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_c[self.counter])
-                counter+=1
+                self.counter+=1
             elif self.counter-1 == 4:
                 self.app.push_screen(AnotherChancePage("The lobster easily avoids the tongs."))
             else:
@@ -172,7 +191,7 @@ class LobsterLiberatorApp(App):
             response_d = [ErrorPage(),ErrorPage(),ErrorPage(), ErrorPage(),ErrorPage(),ErrorPage()]
             if "d" == correct_answer[self.counter-1]:
                 self.app.push_screen(response_d[self.counter])
-                counter+=1
+                self.counter+=1
             elif self.counter-1 == 4:
                 self.app.push_screen(AnotherChancePage("The lobster doesn't seem interested in the pen."))
             else:
