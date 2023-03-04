@@ -110,6 +110,7 @@ class Title(Screen):
         yield self.box
     def on_mount(self):
         self.styles.animate("opacity", value=0.0, duration=8.0)
+
 class AnotherChancePage(Screen):
 
     def __init__(self, message: str) -> None:
@@ -192,6 +193,8 @@ class LobsterLiberatorApp(App):
         if event.key == "enter":
             if self.counter > 17:
                 self.app.exit()
+            elif self.counter == 5 or self.counter == 7 or self.counter == 11 or self.counter == 14:
+                pass #don't do anything
             else:
                 self.app.push_screen(screens[self.counter])
                 self.counter += 1
